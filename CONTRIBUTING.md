@@ -45,7 +45,6 @@ We'd love to include your workflow! Here's how:
    - Configuration steps
    - Usage examples
    - Troubleshooting tips
-   - Changelog
 
 5. **Export your workflow**
    - Remove any sensitive credentials
@@ -57,10 +56,7 @@ We'd love to include your workflow! Here's how:
    - Add your workflow to the table in the main README.md
    - Keep the list alphabetically sorted
 
-7. **Update CHANGELOG**
-   - Add an entry under `[Unreleased]` section
-
-8. **Submit a Pull Request**
+7. **Submit a Pull Request**
    - Clear description of what the workflow does
    - Why it's useful
    - Any special requirements or dependencies
@@ -76,19 +72,6 @@ Found a bug or have an improvement?
 5. Update the version number (following semver)
 6. Submit a PR with clear description of changes
 
-## Workflow Guidelines
-
-### Quality Standards
-
-Your workflow should:
-- ✅ Solve a real problem Administrate users face
-- ✅ Be well-documented with clear setup instructions
-- ✅ Use descriptive node names in the workflow
-- ✅ Include error handling where appropriate
-- ✅ Remove all credentials and sensitive data
-- ✅ Use placeholder URLs that users can customize
-- ✅ Be tested and working
-
 ### README Template
 
 ```markdown
@@ -103,18 +86,11 @@ Your workflow should:
 ## Solution
 [Describe how the workflow solves it]
 
-## Features
-- Feature 1
-- Feature 2
-
 ## Setup Instructions
 [Step-by-step setup guide]
 
 ## Usage
 [How to use the workflow]
-
-## Customization Ideas
-[Ways users can extend it]
 
 ## Troubleshooting
 [Common issues and solutions]
@@ -133,23 +109,6 @@ Your workflow should:
 - Add example input/output data where helpful
 - Consider edge cases and error scenarios
 
-## Code of Conduct
-
-- Be respectful and inclusive
-- Provide constructive feedback
-- Help others in discussions
-- Focus on what's best for the community
-
-## Questions?
-
-- Open a [GitHub Discussion](https://github.com/Administrate/administrate-automator-examples/discussions)
-- Reach out on the Administrate community forums
-- Check the [Developer Portal](https://developers.getadministrate.com)
-
 ## License
 
 By contributing, you agree that your contributions will be licensed under the same license as the project.
-
----
-
-Thank you for contributing! 🎉

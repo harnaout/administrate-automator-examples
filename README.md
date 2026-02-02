@@ -16,7 +16,7 @@ Automator is powered by n8n, a powerful workflow automation platform that we've 
 4. **Import into Automator** using the import function in your n8n interface
 5. **Configure credentials** and customize as needed for your organization
 
-For detailed setup instructions, visit the [Automator documentation](https://developers.getadministrate.com/docs/guides/Automator/01_intro.md).
+For detailed setup instructions, visit the [Automator documentation](https://support.getadministrate.com/hc/en-us/articles/41797081434513-Administrate-Automator#h_01KC4HGRHKTPC1C95A840Q7T21).
 
 ## Available Workflows
 
@@ -29,7 +29,7 @@ For detailed setup instructions, visit the [Automator documentation](https://dev
 
 1. Navigate to the workflow directory you want to use
 2. Download the `workflow.json` file
-3. In your Automator instance, click the menu (⋮) in the top right
+3. In your Adminsitrate Automator workspace > new workflow, click the menu (⋮) in the top right
 4. Select "Import from File"
 5. Choose the downloaded JSON file
 6. Configure your Administrate OAuth credentials
@@ -56,21 +56,10 @@ workflow-name/
 
 ## Support
 
-- **Documentation**: [Administrate Developer Portal](https://developers.getadministrate.com)
 - **Automator Guide**: [Getting Started with Automator](https://support.getadministrate.com/hc/en-us/articles/41797081434513-Administrate-Automator)
-- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/Administrate/administrate-automator-examples/issues)
 - **Community**: Join discussions in the [Issues section](https://github.com/Administrate/administrate-automator-examples/issues)
-
-## License
-
-These workflow examples are provided as-is for use with Administrate. See [LICENSE](LICENSE) for details.
 
 ## Stay Updated
 
-- ⭐ **Star this repo** to bookmark it
-- 👁️ **Watch this repo** to get notified of new workflows and updates
-- 📋 Check [CHANGELOG.md](CHANGELOG.md) for recent updates
-
----
-
-Built with ❤️ by the Administrate community
+- **Star this repo** to bookmark it
+- **Watch this repo** to get notified of new workflows and updates

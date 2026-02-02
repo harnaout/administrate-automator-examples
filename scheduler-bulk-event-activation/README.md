@@ -71,14 +71,6 @@ This workflow renders a form which the user can use to submit the ID of the Sche
 
 [View the video demonstration](https://fast.wistia.com/embed/medias/56p9rknadn)
 
-## Customization Ideas
-
-- Add validation logic before activation (e.g., check if instructor is assigned)
-- Send email notifications when activation completes
-- Add additional event fields during activation
-- Create audit logs of bulk activations
-- Add rollback functionality for undoing activations
-
 ## Troubleshooting
 
 **Events not activating:**
@@ -90,15 +82,3 @@ This workflow renders a form which the user can use to submit the ID of the Sche
 - Ensure workflow is activated
 - Check webhook path configuration
 - Verify network/firewall settings
-
-## Support
-
-- Report issues: [GitHub Issues](https://github.com/Administrate/administrate-automator-examples/issues)
-- Documentation: [Administrate Developer Portal](https://developers.getadministrate.com)
-
-## Changelog
-
-### v1.0.0 (2026-02-02)
-- Initial release
-- Basic bulk activation functionality
-- Web form interface

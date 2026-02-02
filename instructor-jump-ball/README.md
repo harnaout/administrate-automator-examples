@@ -106,7 +106,7 @@ Parameters:
 
 ### How It Works
 
-1. **Invitation Request**: Admin triggers webhook with event and instructor IDs
+1. **Invitation Request**: Admin sends the invitation email to instructors
 2. **Event Details Fetch**: Workflow retrieves event information via GraphQL
 3. **Display RSVP Page**: Instructor sees event details with Accept/Decline buttons
 4. **Response Handling**:
@@ -119,45 +119,13 @@ Parameters:
 **When Instructor Accepts:**
 1. Fetch current event details and instructor name
 2. Add timestamped acceptance note to event internal notes
-3. Add instructor to event as staff member
+3. Add instructor to event as Instructor role
 4. Display thank you confirmation
 
 **When Instructor Declines:**
 1. Fetch current event details and instructor name
 2. Add timestamped decline note to event internal notes
 3. Display thank you confirmation
-
-## Workflow Structure
-
-### Key Nodes
-
-- **When this URL is hit**: Initial invitation webhook
-- **HTTP Request**: Fetch event data for invitation
-- **Code**: Format dates for display
-- **Respond to Webhook**: Display RSVP interface
-- **Webhook1**: Handle Accept/Decline responses
-- **Switch1**: Route to accept or decline logic
-- **Code1/Code2**: Append timestamped notes
-- **HTTP Request4**: Add instructor to event staff
-
-## Customization Ideas
-
-- Add email notifications to event organizers when instructors respond
-- Include instructor payment rates in the decision logic
-- Send reminder emails if no response after X days
-- Add instructor qualifications/certifications to the RSVP page
-- Integrate with calendar systems to check actual availability
-- Add multiple instructor invitation capability (true "jump ball")
-- Create a dashboard showing pending invitations
-- Add SMS notification option alongside email
-
-## Data Logged
-
-The workflow automatically logs the following to event internal notes:
-- Instructor name (first and last)
-- Response type (accepted/declined)
-- Timestamp of response
-- Formatted as HTML for easy reading in Administrate
 
 Example internal note:
 ```html
@@ -191,17 +159,3 @@ Your Administrate OAuth2 credential needs:
 - **Events**: Read and update permissions
 - **Contacts**: Read permissions
 - **Event Staff**: Create permissions
-
-## Support
-
-- Report issues: [GitHub Issues](https://github.com/Administrate/administrate-automator-examples/issues)
-- Documentation: [Administrate Developer Portal](https://developers.getadministrate.com)
-
-## Changelog
-
-### v1.0.0 (2026-02-02)
-- Initial release
-- RSVP invitation system
-- Accept/Decline response handling
-- Automatic instructor assignment
-- Internal notes logging
